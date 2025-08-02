@@ -1,0 +1,211 @@
+.social-links {
+    display: flex;
+    gap: 8px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #FFFFFF1A;
+        box-shadow: 0px 0px 15px 0px #DDDDDD26 inset;
+        backdrop-filter: blur(6px);
+        font-size: 18px;
+        &:hover {
+            background-color: #fff;
+            color: #151515;
+        }
+    }
+    &.style-1 {
+        a {
+            background-color: rgba(17, 17, 17, 1);
+            &:hover {
+                background-color: #fff;
+                color: #151515;
+            }
+        }
+    }
+}
+
+.box-status {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 7px 24px;
+    color: #BBBBBB;
+    border: 1px solid #FFFFFF26;
+    border-radius: 99px;
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--primary);
+    }
+    .number {
+        color: #fff;
+    }
+}
+
+.wg-counter {
+    &.style-1 {
+        .odometer-inside {
+            display: flex;
+            align-items: center;
+            .odometer-digit,
+            .odometer-value {
+                font-size: 96px;
+                line-height: 96px;
+                letter-spacing: -4%;
+            }
+        }
+    }
+}
+
+.list-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    a {
+        display: flex;
+        align-items: center;
+        padding: 5px 24px;
+        border-radius: 99px;
+        background: #25252580;
+        &:hover {
+            background: #fff;
+            color: #000;
+        }
+    }
+}
+
+.subtitle {
+    color: #FFFFFF99;
+    letter-spacing: 0;
+    &.style-center {
+        width: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.type-tags {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 5px 24px;
+    border-radius: 99px;
+    background: #25252580;
+}
+
+.avatar-wrap {
+    // background: var(--gradient1);
+    background-image: url(../images/avatar/bg-avatar.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.dot-circle {
+    display: flex;
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: var(--gradient2);
+}
+
+.box-gradient1 {
+    width: 400px;
+    height: 692px;
+    opacity: 0.75;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 400px;
+        height: 400px;
+        background-color: var(--secondary,#FB8410);
+        filter: blur(100px);
+    }
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 400px;
+        height: 400px;
+        background-color: var(--primary);
+        filter: blur(200px);
+    }
+}
+
+.box-gradient2 {
+    width: 767px;
+    height: 1327px;
+    opacity: 0.75;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 767px;
+        height: 767px;
+        background-color: var(--secondary,#FB8410);
+        filter: blur(100px);
+    }
+    &::after {
+        position: absolute;
+        bottom: 0;
+        right: 65px;
+        content: '';
+        width: 767px;
+        height: 767px;
+        background-color: var(--primary);
+        filter: blur(200px);
+    }
+}
+
+.gradient-icon-1 {
+    width: 118px;
+    height: 118px;
+    -webkit-mask: url('../images/section/step1.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('../images/section/step1.svg') no-repeat center;
+}
+
+.gradient-icon-2 {
+    width: 112px;
+    height: 71px;
+    -webkit-mask: url('../images/section/step2.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('../images/section/step2.svg') no-repeat center;
+}
+
+.gradient-icon-3 {
+    width: 74px;
+    height: 106px;
+    -webkit-mask: url('../images/section/step3.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('../images/section/step3.svg') no-repeat center;
+}
+
+.gradient-icon-4 {
+    width: 89px;
+    height: 114px;
+    -webkit-mask: url('../images/section/step4.svg') no-repeat center;
+    -webkit-mask-size: contain;
+    mask: url('../images/section/step4.svg') no-repeat center;
+}
+
+.gradient-icon {
+    background: var(--gradient5);
+    mask-size: contain;
+}
